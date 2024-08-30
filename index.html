@@ -21,155 +21,109 @@
 
 
         <!-- webpage title (shows in browser tab) -->
-        <title>Pyscript Web Dice Roller</title>
+        <title>Pyscript Web Bingo Game</title>
     </head>
 
     <body>
         <dialog id="loading"><h1>Loading python environment...</h1></dialog>
 
-        <h1>Dice Roller</h1>
+        <h1>Bingo!</h1>
         <section id="caller_section">
             <!-- Put your caller html code here -->
-            <table border="1">
-                <tbody>
-                    <tr>
-                        <td id="cell_1">1</td>
-                        <td id="cell_2">2</td>
-                        <td id="cell_3">3</td>
-                        <td id="cell_4">4</td>
-                        <td id="cell_5">5</td>
-                        <td id="cell_6">6</td>
-                        <td id="cell_7">7</td>
-                        <td id="cell_8">8</td>
-                        <td id="cell_9">9</td>
-                        <td id="cell_10">10</td>
-                        <td id="cell_11">11</td>
-                        <td id="cell_12">12</td>
-                        <td id="cell_13">13</td>
-                        <td id="cell_14">14</td>
-                        <td id="cell_15">15</td>
-                    </tr>
-                    <tr>
-                        <td id="cell_16">16</td>
-                        <td id="cell_17">17</td>
-                        <td id="cell_18">18</td>
-                        <td id="cell_19">19</td>
-                        <td id="cell_20">20</td>
-                        <td id="cell_21">21</td>
-                        <td id="cell_22">22</td>
-                        <td id="cell_23">23</td>
-                        <td id="cell_24">24</td>
-                        <td id="cell_25">25</td>
-                        <td id="cell_26">26</td>
-                        <td id="cell_27">27</td>
-                        <td id="cell_28">28</td>
-                        <td id="cell_29">29</td>
-                        <td id="cell_30">30</td>
-                    </tr>
-                    <tr>
-                        <td id="cell_31">31</td>
-                        <td id="cell_32">32</td>
-                        <td id="cell_33">33</td>
-                        <td id="cell_34">34</td>
-                        <td id="cell_35">35</td>
-                        <td id="cell_36">36</td>
-                        <td id="cell_37">37</td>
-                        <td id="cell_38">38</td>
-                        <td id="cell_39">39</td>
-                        <td id="cell_40">40</td>
-                        <td id="cell_41">41</td>
-                        <td id="cell_42">42</td>
-                        <td id="cell_43">43</td>
-                        <td id="cell_44">44</td>
-                        <td id="cell_45">45</td>
-                    </tr>
-                    <tr>
-                        <td id="cell_46">46</td>
-                        <td id="cell_47">47</td>
-                        <td id="cell_48">48</td>
-                        <td id="cell_49">49</td>
-                        <td id="cell_50">50</td>
-                        <td id="cell_51">51</td>
-                        <td id="cell_52">52</td>
-                        <td id="cell_53">53</td>
-                        <td id="cell_54">54</td>
-                        <td id="cell_55">55</td>
-                        <td id="cell_56">56</td>
-                        <td id="cell_57">57</td>
-                        <td id="cell_58">58</td>
-                        <td id="cell_59">59</td>
-                        <td id="cell_60">60</td>
-                    </tr>
-                    <tr>
-                        <td id="cell_61">61</td>
-                        <td id="cell_62">62</td>
-                        <td id="cell_63">63</td>
-                        <td id="cell_64">64</td>
-                        <td id="cell_65">65</td>
-                        <td id="cell_66">66</td>
-                        <td id="cell_67">67</td>
-                        <td id="cell_68">68</td>
-                        <td id="cell_69">69</td>
-                        <td id="cell_70">70</td>
-                        <td id="cell_71">71</td>
-                        <td id="cell_72">72</td>
-                        <td id="cell_73">73</td>
-                        <td id="cell_74">74</td>
-                        <td id="cell_75">75</td>
-                    </tr>
-                </tbody>
-            </table>
-            <button id="call_number" py-click="call_next">Call next number</button>
-
+             <table border="1">
+        <tbody>
+            <tr>
+                <td id="cell_1">1</td>
+                <td id="cell_2">2</td>
+                <td id="cell_3">3</td>
+                <td id="cell_4">4</td>
+                <td id="cell_5">5</td>
+                <td id="cell_6">6</td>
+                <td id="cell_7">7</td>
+                <td id="cell_8">8</td>
+                <td id="cell_9">9</td>
+                <td id="cell_10">10</td>
+                <td id="cell_11">11</td>
+                <td id="cell_12">12</td>
+                <td id="cell_13">13</td>
+                <td id="cell_14">14</td>
+                <td id="cell_15">15</td>
+            </tr>
+            <tr>
+                <td id="cell_16">16</td>
+                <td id="cell_17">17</td>
+                <td id="cell_18">18</td>
+                <td id="cell_19">19</td>
+                <td id="cell_20">20</td>
+                <td id="cell_21">21</td>
+                <td id="cell_22">22</td>
+                <td id="cell_23">23</td>
+                <td id="cell_24">24</td>
+                <td id="cell_25">25</td>
+                <td id="cell_26">26</td>
+                <td id="cell_27">27</td>
+                <td id="cell_28">28</td>
+                <td id="cell_29">29</td>
+                <td id="cell_30">30</td>
+            </tr>
+            <tr>
+                <td id="cell_31">31</td>
+                <td id="cell_32">32</td>
+                <td id="cell_33">33</td>
+                <td id="cell_34">34</td>
+                <td id="cell_35">35</td>
+                <td id="cell_36">36</td>
+                <td id="cell_37">37</td>
+                <td id="cell_38">38</td>
+                <td id="cell_39">39</td>
+                <td id="cell_40">40</td>
+                <td id="cell_41">41</td>
+                <td id="cell_42">42</td>
+                <td id="cell_43">43</td>
+                <td id="cell_44">44</td>
+                <td id="cell_45">45</td>
+            </tr>
+            <tr>
+                <td id="cell_46">46</td>
+                <td id="cell_47">47</td>
+                <td id="cell_48">48</td>
+                <td id="cell_49">49</td>
+                <td id="cell_50">50</td>
+                <td id="cell_51">51</td>
+                <td id="cell_52">52</td>
+                <td id="cell_53">53</td>
+                <td id="cell_54">54</td>
+                <td id="cell_55">55</td>
+                <td id="cell_56">56</td>
+                <td id="cell_57">57</td>
+                <td id="cell_58">58</td>
+                <td id="cell_59">59</td>
+                <td id="cell_60">60</td>
+            </tr>
+            <tr>
+                <td id="cell_61">61</td>
+                <td id="cell_62">62</td>
+                <td id="cell_63">63</td>
+                <td id="cell_64">64</td>
+                <td id="cell_65">65</td>
+                <td id="cell_66">66</td>
+                <td id="cell_67">67</td>
+                <td id="cell_68">68</td>
+                <td id="cell_69">69</td>
+                <td id="cell_70">70</td>
+                <td id="cell_71">71</td>
+                <td id="cell_72">72</td>
+                <td id="cell_73">73</td>
+                <td id="cell_74">74</td>
+                <td id="cell_75">75</td>
+            </tr>
+        </tbody>
+    </table>
         </section>
         <section id="card_section">
             <!-- Put your bingo card html here -->
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th colspan="5">Bingo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td id="bcell_1_1" py-click="check_cell"></td>
-                        <td id="bcell_1_2" py-click="check_cell"></td>
-                        <td id="bcell_1_3" py-click="check_cell"></td>
-                        <td id="bcell_1_4" py-click="check_cell"></td>
-                        <td id="bcell_1_5" py-click="check_cell"></td>
-                    </tr>
-                    <tr>
-                        <td id="bcell_2_1" py-click="check_cell"></td>
-                        <td id="bcell_2_2" py-click="check_cell"></td>
-                        <td id="bcell_2_3" py-click="check_cell"></td>
-                        <td id="bcell_2_4" py-click="check_cell"></td>
-                        <td id="bcell_2_5" py-click="check_cell"></td>
-                    </tr>
-                    <tr>
-                        <td id="bcell_3_1" py-click="check_cell"></td>
-                        <td id="bcell_3_2" py-click="check_cell"></td>
-                        <td id="bcell_3_3" py-click="check_cell"></td>
-                        <td id="bcell_3_4" py-click="check_cell"></td>
-                        <td id="bcell_3_5" py-click="check_cell"></td>
-                    </tr>
-                    <tr>
-                        <td id="bcell_4_1" py-click="check_cell"></td>
-                        <td id="bcell_4_2" py-click="check_cell"></td>
-                        <td id="bcell_4_3" py-click="check_cell"></td>
-                        <td id="bcell_4_4" py-click="check_cell"></td>
-                        <td id="bcell_4_5" py-click="check_cell"></td>
-                    </tr>
-                    <tr>
-                        <td id="bcell_5_1" py-click="check_cell"></td>
-                        <td id="bcell_5_2" py-click="check_cell"></td>
-                        <td id="bcell_5_3" py-click="check_cell"></td>
-                        <td id="bcell_5_4" py-click="check_cell"></td>
-                        <td id="bcell_5_5" py-click="check_cell"></td>
-                    </tr>
-                </tbody>
-            </table>
+
         </section>
-        <button id="reset_game" py-click="reset_game">Reset Game</button>
 
         <script type="py" src="main.py" config="./pyscript.json"></script>
     </body>
