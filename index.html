@@ -27,14 +27,33 @@
     <body>
         <dialog id="loading"><h1>Loading python environment...</h1></dialog>
 
-        <h1>Bingo!</h1>
-        <section id="caller_section">
-            <!-- Put your caller html code here -->
+        <dialog id="win_game">
+            <h1>You Win!!</h1>
+            <button id="new_game" py-click="reset_game">New Game</button>
+        </dialog>
 
+        <section id="header">
+            <h1>BINGO!</h1>
+            <button id="reset_game" py-click="reset_game">Reset Game</button>
         </section>
-        <section id="card_section">
-            <!-- Put your bingo card html here -->
 
+        <section id="caller">
+            <h2>Caller</h2>
+            <!-- put your caller table here -->
+            <div>
+                <div id="current-container">
+                    <p id="current_call"></p>
+                    <button id="call_number" py-click="call_next">Call next</button>
+                </div>
+                <div id="history-container">
+                    <h3>Call History</h3>
+                    <p id="called_numbers"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="card">
+            <!--put your bingo card table here-->
         </section>
 
         <script type="py" src="main.py" config="./pyscript.json"></script>

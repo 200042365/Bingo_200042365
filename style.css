@@ -1,0 +1,15 @@
+/* box-sizing makes css styling easier with tables */
+* {
+    box-sizing: border-box;
+}
+
+/* Highlight css classes - can be applied/removed with python code */
+.highlight-card {
+    color: red;
+    font-weight: bold;
+}
+
+.highlight-caller {
+    color: cornflowerblue;
+    font-weight: bold;
+}
