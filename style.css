@@ -3,13 +3,85 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: linear-gradient(to top right, lightskyblue, blanchedalmond);
+    font-family: "Times New Roman", sans-serif;
+    margin: 20px;
+    padding: 10px;
+}
+
+button {
+    font-size: medium;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+h1, h2, h3 {
+    font-family: "Georgia", serif;
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#win_game{
+}
+
+
+#loading {
+    font-size: x-large;
+    font-family: "Comic Sans MS", sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+#cell_id{
+    font-size: medium;
+    padding: 3px;
+}
+#cell_id_id{
+    font-size: medium;
+    padding: 3px;
+}
+
+
 /* Highlight css classes - can be applied/removed with python code */
 .highlight-card {
-    color: red;
+    background-color: lightskyblue;
+    color: lightcyan;
     font-weight: bold;
 }
 
 .highlight-caller {
-    color: cornflowerblue;
+    color: white;
     font-weight: bold;
 }
+
+
+
+#main_box{
+    display: table;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#current_call{
+    text-align: center;
+}
+
+
+#player_box{
+    display: table;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#called_numbers{
+    text-align: center;
+    margin: auto;
+    border: 1px solid lightcyan;
+}
+
